@@ -19,8 +19,10 @@ app.add_middleware(
 # ============================================
 #  ТВОИ КЛЮЧИ – ВСТАВЬ ИХ СЮДА
 # ============================================
-GOOGLE_API_KEY = "AIzaSyCbB73U2coWJbxIdBS9IFQOwq96uRfgJrc"
-RESEMBLE_API_KEY = "n7YlrOrWcPKKrCQJPrr1pgtt"
+import os
+
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
+RESEMBLE_API_KEY = os.environ.get("RESEMBLE_API_KEY")
 BASE_URL = "https://app.resemble.ai/api/v2"    # правильный базовый URL
 # ============================================
 
