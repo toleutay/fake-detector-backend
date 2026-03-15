@@ -107,7 +107,7 @@ async def check_content(
                 raise Exception(f"Sightengine error: {response.text}")
 
             result = response.json()
-            confidence = result.get("type", {}).get("genai", 0.5)
+            confidence = result.get("type", {}).get("ai_generated", 0.5)
             is_fake = confidence > 0.7
 
             return {
