@@ -6,3 +6,5 @@ newspaper3k
 python-multipart
 python-dotenv
 sightengine
+lxml==5.3.0
+lxml_html_clean==0.4.4
